@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="#">Ahmad Jutt.</a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#"><button>Contact Me</button></a></li>
+                <li><i><a href="#">
+                            <i class="fa fa-moon"></i>
+                        </a></i></li>
+            </ul>
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <div class="hero">
+            <div class="content">
+                <h1>Ahmad Jutt</h1>
+                <p><strong>FrontEnd Developer</strong> , with knowledge in web development and Design , I offer the best
+                    project resulting in quality work , </p>
+                <div class="buttons">
+                    <button class="btns btn-download">Download CV</button>
+                    <button class="btns">Contact</button>
+                </div>
+            </div>
+            <div class="hero-images">
+                <div class="elements">
+                    <!-- <img src="curve.png" alt="">
+                    <img src="line.png" alt=""> -->
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="me.jpg" alt="">
+                </div>
+                <div class="social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let menu = document.querySelector("ul");
+        let bars = document.querySelector(".header .fa-bars");
+
+        bars.addEventListener("click", function () {
+            menu.classList.toggle("show");
+        })
+
+        let moon = document.querySelector(".header .fa-moon");
+        let sun = document.querySelector(".header .fa-sun");
+
+        moon.addEventListener("click", function () {
+            document.body.classList.toggle("Dark-mode");
+            moon.classList.toggle("hide");
+        })
+    </script>
+</body>
+
+</html>
